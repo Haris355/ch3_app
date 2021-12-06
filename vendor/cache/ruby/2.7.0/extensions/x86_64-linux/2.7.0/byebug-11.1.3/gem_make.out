@@ -1,0 +1,19 @@
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+/home/haris/.rvm/rubies/ruby-2.7.0/bin/ruby -I /home/haris/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20211206-22604-19z4fe5.rb extconf.rb
+creating Makefile
+
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -m 0755 byebug.so ./.gem.20211206-22604-14svb5h/byebug

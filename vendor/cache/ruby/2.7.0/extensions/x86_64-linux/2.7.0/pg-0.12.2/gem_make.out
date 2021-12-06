@@ -1,0 +1,114 @@
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/pg-0.12.2/ext
+/home/haris/.rvm/rubies/ruby-2.7.0/bin/ruby -I /home/haris/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20211206-22604-e4g7lt.rb extconf.rb
+checking for pg_config... yes
+Using config values from /usr/bin/pg_config
+checking for libpq-fe.h... yes
+checking for libpq/libpq-fs.h... yes
+checking for PQconnectdb() in -lpq... yes
+checking for PQconnectionUsedPassword()... yes
+checking for PQisthreadsafe()... yes
+checking for PQprepare()... yes
+checking for PQexecParams()... yes
+checking for PQescapeString()... yes
+checking for PQescapeStringConn()... yes
+checking for PQgetCancel()... yes
+checking for lo_create()... yes
+checking for pg_encoding_to_char()... yes
+checking for PQsetClientEncoding()... yes
+checking for rb_encdb_alias()... yes
+checking for rb_enc_alias()... yes
+checking for struct pgNotify.extra in libpq-fe.h... yes
+checking for unistd.h... yes
+checking for ruby/st.h... yes
+creating extconf.h
+creating Makefile
+
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/pg-0.12.2/ext
+make "DESTDIR=" clean
+
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/pg-0.12.2/ext
+make "DESTDIR="
+compiling compat.c
+compiling pg.c
+pg.c: In function ‘pgconn_wait_for_notify’:
+pg.c:2117:9: warning: implicit declaration of function ‘rb_thread_select’; did you mean ‘rb_thread_fd_select’? [-Wimplicit-function-declaration]
+ 2117 |   ret = rb_thread_select( sd+1, &sd_rset, NULL, NULL, ptimeout );
+      |         ^~~~~~~~~~~~~~~~
+      |         rb_thread_fd_select
+pg.c: In function ‘pgconn_block’:
+pg.c:2592:3: warning: format not a string literal and no format arguments [-Wformat-security]
+ 2592 |   rb_raise( rb_ePGError, PQerrorMessage(conn) );
+      |   ^~~~~~~~
+pg.c:2607:4: warning: format not a string literal and no format arguments [-Wformat-security]
+ 2607 |    rb_raise( rb_ePGError, PQerrorMessage(conn) );
+      |    ^~~~~~~~
+pg.c: In function ‘pgconn_locreate’:
+pg.c:2866:11: warning: variable ‘lo_oid’ set but not used [-Wunused-but-set-variable]
+ 2866 |  Oid ret, lo_oid;
+      |           ^~~~~~
+pg.c: In function ‘find_or_create_johab’:
+pg.c:3940:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+ 3940 |  for (i = 0; i < sizeof(aliases)/sizeof(aliases[0]); ++i) {
+      |                ^
+pg.c:3946:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+ 3946 |  for (i = 1; i < sizeof(aliases)/sizeof(aliases[0]); ++i) {
+      |                ^
+pg.c:3926:32: warning: implicit declaration of function ‘rb_encdb_alias’; did you mean ‘rb_enc_alias’? [-Wimplicit-function-declaration]
+ 3926 | # define ENC_ALIAS(name, orig) rb_encdb_alias((name), (orig))
+      |                                ^~~~~~~~~~~~~~
+pg.c:3947:3: note: in expansion of macro ‘ENC_ALIAS’
+ 3947 |   ENC_ALIAS(aliases[i], aliases[0]);
+      |   ^~~~~~~~~
+pg.c: In function ‘pgconn_get_client_encoding_as_rb_encoding’:
+pg.c:3974:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+ 3974 |   for (i = 0; i < sizeof(enc_pg2ruby_mapping)/sizeof(enc_pg2ruby_mapping[0]); ++i) {
+      |                 ^
+pg.c: In function ‘pgconn_get_rb_encoding_as_pg_encname’:
+pg.c:4006:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+ 4006 |  for (i = 0; i < sizeof(enc_pg2ruby_mapping)/sizeof(enc_pg2ruby_mapping[0]); ++i) {
+      |                ^
+pg.c: In function ‘pgconn_internal_encoding_set’:
+pg.c:4065:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+ 4065 |   for (i = 0; i < sizeof(enc_pg2ruby_mapping)/sizeof(enc_pg2ruby_mapping[0]); ++i) {
+      |                 ^
+pg.c: In function ‘pgconn_external_encoding’:
+pg.c:4121:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+ 4121 |   for (i = 0; i < sizeof(enc_pg2ruby_mapping)/sizeof(enc_pg2ruby_mapping[0]); ++i) {
+      |                 ^
+In file included from /home/haris/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby.h:33,
+                 from pg.h:16,
+                 from pg.c:15:
+pg.c: In function ‘Init_pg_ext’:
+/home/haris/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/ruby.h:2799:117: warning: passing argument 3 of ‘rb_define_method0’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 2799 | #define rb_define_method(klass, mid, func, arity) rb_define_method_choose_prototypem3((arity),(func))((klass),(mid),(func),(arity));
+      |                                                                                                                     ^~~~~~
+      |                                                                                                                     |
+      |                                                                                                                     VALUE (*)(VALUE,  VALUE) {aka long unsigned int (*)(long unsigned int,  long unsigned int)}
+pg.c:4505:2: note: in expansion of macro ‘rb_define_method’
+ 4505 |  rb_define_method(rb_cPGresult, "values", pgresult_values, 0);
+      |  ^~~~~~~~~~~~~~~~
+In file included from /home/haris/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/ruby.h:2148,
+                 from /home/haris/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby.h:33,
+                 from pg.h:16,
+                 from pg.c:15:
+/home/haris/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/ruby.h:2775:27: note: expected ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’}
+ 2775 | RB_METHOD_DEFINITION_DECL(rb_define_method, (2,3), (VALUE klass, const char *name), (klass, name))
+      |                           ^~~~~~~~~~~~~~~~
+/home/haris/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/intern.h:1042:82: note: in definition of macro ‘RB_METHOD_DEFINITION_DECL_C’
+ 1042 |     __attribute__((__unused__,__weakref__(#def),__nonnull__ nonnull))static void defname(RB_UNWRAP_MACRO decl,VALUE(*func)funcargs,int arity);
+      |                                                                                  ^~~~~~~
+/home/haris/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/intern.h:1074:1: note: in expansion of macro ‘RB_METHOD_DEFINITION_DECL_1’
+ 1074 | RB_METHOD_DEFINITION_DECL_1(def,nonnull,def##0 ,0 ,decl,vars,(VALUE)) \
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/haris/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/ruby.h:2775:1: note: in expansion of macro ‘RB_METHOD_DEFINITION_DECL’
+ 2775 | RB_METHOD_DEFINITION_DECL(rb_define_method, (2,3), (VALUE klass, const char *name), (klass, name))
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+pg.c: At top level:
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+linking shared-object pg_ext.so
+
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/pg-0.12.2/ext
+make "DESTDIR=" install
+/usr/bin/install -m 0755 pg_ext.so ./.gem.20211206-22604-5m0c22

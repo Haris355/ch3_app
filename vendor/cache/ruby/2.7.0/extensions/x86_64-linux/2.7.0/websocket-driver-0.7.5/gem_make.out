@@ -1,0 +1,15 @@
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/home/haris/.rvm/rubies/ruby-2.7.0/bin/ruby -I /home/haris/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20211206-22604-w8kuuj.rb extconf.rb
+creating Makefile
+
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -m 0755 websocket_mask.so ./.gem.20211206-22604-1umeshp
