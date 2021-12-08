@@ -1,0 +1,16 @@
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/eventmachine-1.0.4/ext/fastfilereader
+/home/haris/.rvm/rubies/ruby-2.7.0/bin/ruby -I /home/haris/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20211208-39800-1rakjl0.rb extconf.rb
+creating Makefile
+
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/eventmachine-1.0.4/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/eventmachine-1.0.4/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/haris/projects/ch3_app/vendor/cache/ruby/2.7.0/gems/eventmachine-1.0.4/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -m 0755 fastfilereaderext.so ./.gem.20211208-39800-k7heez
