@@ -1,16 +1,21 @@
-require 'spec_helper'
+require 'spec helper'
 describe "Static pages" do
   describe "Home page" do
-    it "should have the h1 'ch3_ap'" do
-      visit '/static pages/home'
+    it "should have the h1 'ch3_app'" do
+      visit '/static_pages/home'
       page.should have_selector('h1', :text => 'ch3_app')
     end
-    it "should have the title 'Home'" do
+
+    it "should have the base title" do
       visit '/static pages/home'
-      page.should have_selector('title',
-                                :text => "Ruby on Rails Tutorial ch3_app | Home")
-      end
+      page.should have selector('title',
+                                :text => "Ruby on Rails Tutorial ch3_app")
     end
+    it "should not have a custom page title" do
+      visit '/static pages/home'
+      page.should_not have_selector('title', :text => '| Home')
+    end
+  end
 
   describe "Help page" do
     it "should have the h1 'Help'" do
@@ -34,6 +39,18 @@ describe "Static pages" do
       visit '/static pages/about'
       page.should have_selector('title',
                                 :text => "Ruby on Rails Tutorial ch3_app | About Us")
+    end
+  end
+
+  describe "Contact page" do
+    it "should have the h1 'Contact'" do
+      visit '/static pages/contact'
+      page.should have_selector('h1', :text => 'Contact')
+    end
+    it "should have the title 'Contact'" do
+      visit '/static pages/contact'
+      page.should have_selector('title',
+                                :text => "Ruby on Rails Tutorial ch3_app | Contact")
     end
   end
 end
