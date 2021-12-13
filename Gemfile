@@ -5,11 +5,10 @@ ruby '2.7.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.6'
-gem 'bootstrap-sass'
-#gem 'minitest'
-#gem 'test-unit'
-#gem 'eventmachine'
-#gem 'activeadmin'
+# gem 'bootstrap-sass', '2.0.0'
+gem 'bootstrap', '~> 5.1.3'
+gem 'jquery-rails'
+#gem 'sprockets', '~> 3.5', '>= 3.5.2'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
