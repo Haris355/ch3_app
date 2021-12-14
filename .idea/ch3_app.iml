@@ -240,6 +240,42 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="bcrypt (vbundled(3.1.16)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bcrypt-3.1.16/ext" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bcrypt-3.1.16/lib" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bcrypt-3.1.16/spec" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bcrypt-3.1.16/ext" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bcrypt-3.1.16/lib" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bcrypt-3.1.16/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bcrypt-3.1.16/ext" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bcrypt-3.1.16/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="bcrypt-ruby (vbundled(3.1.5)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bcrypt-ruby-3.1.5/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bcrypt-ruby-3.1.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="bindex (vbundled(0.8.1)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -547,6 +583,55 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/execjs-2.8.1/lib" />
         </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="factory_girl (vbundled(4.9.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl-4.9.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl-4.9.0/gemfiles" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl-4.9.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl-4.9.0/gemfiles" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl-4.9.0/gemfiles" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="factory_girl_rails (vbundled(4.9.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/pkg" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/tmp" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/features" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/gemfiles" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/pkg" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/tmp" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/features" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/gemfiles" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/pkg" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/tmp" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/factory_girl_rails-4.9.0/gemfiles" />
+        </excluded>
       </library>
     </orderEntry>
     <orderEntry type="module-library">

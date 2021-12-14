@@ -1,5 +1,10 @@
 class User < ActiveRecord::Base
-  attr_accessor :name, :email, :password, :password_confirmation
+
+  def self.attr_accessible(i, i1, i2, i3)
+    # code here
+  end
+
+  attr_accessible :name, :email, :password, :password_confirmation
 
   has_secure_password
 
