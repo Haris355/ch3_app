@@ -9,7 +9,7 @@ gem 'rails', '~> 5.2.6'
 gem 'bootstrap', '~> 5.1.3'
 gem 'jquery-rails'
 gem 'bcrypt-ruby'
-#gem 'sprockets', '~> 3.5', '>= 3.5.2'
+gem 'sprockets', '~> 3.5', '>= 3.5.2'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
