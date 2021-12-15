@@ -70,6 +70,9 @@ group :test do
   gem 'factory_girl_rails'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  # Adding Cucumber
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 
 end
 
