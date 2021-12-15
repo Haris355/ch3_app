@@ -1,6 +1,6 @@
-Ch3App.Application.configure do
+Rails.application.configure do
 
-  # Force all access to the app over SSL, use Strict-Transport-Security,
+# Force all access to the app over SSL, use Strict-Transport-Security,
   # and use secure cookies.
   config.force_ssl = true
 
@@ -28,7 +28,8 @@ Ch3App.Application.configure do
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   # Compress JavaScripts and CSS.
-  config.assets.js_compressor = :uglifier
+  config.assets.js_compressor = :Uglifier
+
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
