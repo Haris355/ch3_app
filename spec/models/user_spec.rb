@@ -32,6 +32,18 @@ describe User do
     end
   end
 
+  it { should respond_to(:admin) }
+  it { should respond_to(:authenticate) }
+
+  it { should be_valid }
+  it { should_not be_admin }
+
+  describe "with admin attribute set to 'true'" do
+    before { @user.toggle!(:admin) }
+
+    it { should be_admin }
+  end
+
   describe 'when email format is valid' do
     it 'should be_valid' do
       addresses = %w[user@foo.COM A US-ER@f.b.org frst.lst@foo.jp a+b@baz.cn]
