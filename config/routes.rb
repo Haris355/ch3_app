@@ -7,7 +7,8 @@ Ch3App::Application.routes.draw do
   # match '/contact', to: 'static_pages#contact'
 
   resources :users
-  resources :sessions, only: %i[new create destroy]
+  resources :sessions, only: [:create, :destroy]
+  resources :microposts, only: [:create, :destroy]
 
   root to: 'static_pages#home'
 
