@@ -191,6 +191,8 @@ describe User do
     before do
       @user.save
       @user.follow!(other_user)
+    end
+
 
     it { should be_following(other_user) }
     its(:followed_users) { should include(other_user) }
@@ -227,6 +229,5 @@ describe User do
         should include(micropost)
       end
     end
-  end
   end
   end
