@@ -25,6 +25,7 @@ Ch3App::Application.routes.draw do
   match '/help', to: 'static_pages#help', via: %i[get post]
   match '/about', to: 'static_pages#about', via: %i[get post]
   match '/contact', to: 'static_pages#contact', via: %i[get post]
+  match '/news', to: 'static_pages#news', via: %i[get post]
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

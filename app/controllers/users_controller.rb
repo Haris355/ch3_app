@@ -39,11 +39,24 @@ class UsersController < ApplicationController
   end
 
   def edit
-    #@user = User.find(params[:id])
+    @user = User.find(params[:id])
   end
 
+
   def update
-    #@user = User.find(params[:id])
+    @user = current_user
+    if @user.update_attributes(user_params)
+      flash[:success] = "Profile updated"
+      sign_in @user
+      redirect_to @user
+    else
+      render :edit
+    end
+  end
+
+=begin
+  def update
+    @user = User.find(params[:id])
     if @user.update_attributes(params.require(:user).permit(:password, :password_confirmation))
       flash[:success] = "Profile updated"
       sign_in @user
@@ -52,6 +65,7 @@ class UsersController < ApplicationController
       render 'edit'
     end
   end
+=end
 
   def following
     @title = "Following"
